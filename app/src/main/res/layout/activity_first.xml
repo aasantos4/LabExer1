@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.alex.labexer1.FirstActivity">
+
+    <TextView
+        android:id="@+id/tvQuiz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz 1"
+        android:layout_marginTop="60dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#F00"/>
+    <EditText
+        android:id="@+id/etQuiz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvQuiz1"
+        android:layout_toRightOf="@id/tvQuiz1"
+        android:hint="Enter Quiz 1"
+        android:layout_marginLeft="100dp"
+        />
+    <TextView
+        android:id="@+id/tvQuiz2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz 2"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/tvQuiz1"
+        android:textStyle="bold"
+        android:textColor="#F00"/>
+
+    <EditText
+        android:id="@+id/etQuiz2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvQuiz2"
+        android:layout_toRightOf="@id/tvQuiz2"
+        android:hint="Enter Quiz 1"
+        android:layout_marginLeft="100dp"
+        />
+    <TextView
+        android:id="@+id/tvSeatworks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seatworks"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/tvQuiz2"
+        android:textStyle="bold"
+        android:textColor="#F00"/>
+    <EditText
+        android:id="@+id/etSeatworks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvSeatworks"
+        android:layout_toRightOf="@id/tvSeatworks"
+        android:hint="Enter Seatworks"
+        android:layout_alignLeft="@id/etQuiz2" />
+
+    <TextView
+        android:id="@+id/tvLabExer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab Exercises"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/tvSeatworks"
+        android:textStyle="bold"
+        android:textColor="#F00"/>
+    <EditText
+        android:id="@+id/etLabExer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvLabExer"
+        android:layout_toRightOf="@id/tvLabExer"
+        android:hint="Enter Lab Exercises"
+        android:layout_alignLeft="@id/etQuiz2" />
+
+    <TextView
+        android:id="@+id/tvMajorExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Major Exam"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/tvLabExer"
+        android:textStyle="bold"
+        android:textColor="#F00"/>
+    <EditText
+        android:id="@+id/etMajorExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvMajorExam"
+        android:layout_toRightOf="@id/tvMajorExam"
+        android:hint="Enter Major Exam"
+        android:layout_alignLeft="@id/etSeatworks" />
+
+
+    <Button
+        android:id="@+id/btnCompute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPUTE"
+        android:layout_below="@id/tvMajorExam"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:textSize="20sp"/>
+</RelativeLayout>
